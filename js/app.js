@@ -43,7 +43,7 @@ function callAPI (city){
                 showWeather(dataJSON);
                 // timeClock();
             }
-            console.log(dataJSON);
+            // console.log(dataJSON);
         })
 }
 
@@ -63,6 +63,7 @@ function showWeather(data) {
     let minutes = date.getMinutes();
     let ampm = hours >= 12 ? 'pm' : 'am';
     hours = (hours > 12) ? hours - 12 : hours;
+    hours = ("0" + hours).slice(-2);
     minutes = ("0" + minutes).slice(-2);
     timeOutput.innerHTML= `${hours}:${minutes}`;
     dateOutput.innerHTML = date.toDateString()
