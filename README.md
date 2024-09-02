@@ -13,5 +13,5 @@
 
 Clone the repository.
 ```
-git clone https://github.com/LTYSMX/SipocApp.git
+git clone https://github.com/NermFrontDev/Weather-App.git
 ```
